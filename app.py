@@ -4,6 +4,16 @@ import torch
 from torchvision import models, transforms
 from torch import nn
 
+# Hide Streamlit footer, header, and main menu
+hide_st_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    header {visibility: hidden;}
+    </style>
+"""
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 # Load Model Function
 def load_model(model_path, device):
     model = models.resnet18(pretrained=True)
@@ -64,4 +74,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
