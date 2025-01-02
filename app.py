@@ -32,8 +32,8 @@ def predict_image(image, model, transform, device, labels_for_viz):
 
 # Streamlit App
 def main():
-    st.title("Plant Disease Classification")
-    st.write("Upload an image of a plant leaf to classify it as one of the following:")
+    st.title("Maize Plant Disease Classification")
+    st.write("Upload an image of a maize plant leaf to classify it as one of the following:")
     st.write("- Blight")
     st.write("- Common Rust")
     st.write("- Gray Leaf Spot")
