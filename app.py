@@ -5,8 +5,7 @@ from torchvision import models, transforms
 from torch import nn
 
 # Hide Streamlit footer, header, and main menu
-hide_st_style =
-    <style>
+hide_st_style=<style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
